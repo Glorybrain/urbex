@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12a632" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/style/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/style/default.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/style/media-query.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="v-page-wrapper">
+      <!-- main @::body -->
+      <main class="v-main" id="v-page-main">
+        <section class="v-page-hero" id="v-hero">
+          <!-- header @::start -->
+          <header class="v-header" id="v-page-header">
+            <div class="col-xl-10 mx-auto px-2 px-lg-0">
+              <div
+                class="d-flex col-12 col-lg-11 mx-auto align-items-center justify-content-between m-0"
+              >
+                <div>
+                  <a href="">
+                    <figure
+                      role="img"
+                      class="v-header-logo d-flex align-items-center flex-nowrap column-gap-3"
+                    >
+                      <img
+                        src="./assets/media/logos/favicon.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <svg
+                        style="
+                          --size: 5rem;
+                          height: auto;
+                          min-width: var(--size);
+                          aspect-ratio: unset;
+                        "
+                        width="61"
+                        height="45"
+                        viewBox="0 0 61 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.18 16.24C5.03333 16.24 4.01333 16 3.12 15.52C2.24 15.04 1.54667 14.38 1.04 13.54C0.533333 12.7 0.28 11.7467 0.28 10.68V1.1H3V10.54C3 11.1533 3.13333 11.7067 3.4 12.2C3.68 12.6933 4.06 13.08 4.54 13.36C5.02 13.6267 5.56667 13.76 6.18 13.76C6.80667 13.76 7.35333 13.6267 7.82 13.36C8.3 13.08 8.67333 12.6933 8.94 12.2C9.22 11.7067 9.36 11.1533 9.36 10.54V1.1H12.08V10.68C12.08 11.7467 11.8267 12.7 11.32 13.54C10.8133 14.38 10.1133 15.04 9.22 15.52C8.34 16 7.32667 16.24 6.18 16.24ZM14.5755 16V5.12H17.0355V7.54L16.8355 7.18C17.0888 6.36667 17.4821 5.8 18.0155 5.48C18.5621 5.16 19.2155 5 19.9755 5H20.6155V7.32H19.6755C18.9288 7.32 18.3288 7.55333 17.8755 8.02C17.4221 8.47333 17.1955 9.11333 17.1955 9.94V16H14.5755ZM27.9959 16.24C27.2093 16.24 26.4826 16.0867 25.8159 15.78C25.1626 15.46 24.6426 15.0067 24.2559 14.42L24.5159 13.9V16H22.0559V0.859999H24.6759V7.28L24.2759 6.74C24.6493 6.15333 25.1559 5.7 25.7959 5.38C26.4359 5.04667 27.1759 4.88 28.0159 4.88C29.0426 4.88 29.9693 5.13333 30.7959 5.64C31.6226 6.14667 32.2759 6.82667 32.7559 7.68C33.2493 8.53333 33.4959 9.49333 33.4959 10.56C33.4959 11.6133 33.2559 12.5733 32.7759 13.44C32.2959 14.3067 31.6426 14.9933 30.8159 15.5C29.9893 15.9933 29.0493 16.24 27.9959 16.24ZM27.6959 13.84C28.2959 13.84 28.8293 13.7 29.2959 13.42C29.7626 13.14 30.1226 12.7533 30.3759 12.26C30.6426 11.7667 30.7759 11.2 30.7759 10.56C30.7759 9.92 30.6426 9.36 30.3759 8.88C30.1226 8.38667 29.7626 8 29.2959 7.72C28.8293 7.42667 28.2959 7.28 27.6959 7.28C27.1226 7.28 26.6026 7.42 26.1359 7.7C25.6826 7.98 25.3226 8.37333 25.0559 8.88C24.8026 9.37333 24.6759 9.93333 24.6759 10.56C24.6759 11.2 24.8026 11.7667 25.0559 12.26C25.3226 12.7533 25.6826 13.14 26.1359 13.42C26.6026 13.7 27.1226 13.84 27.6959 13.84ZM40.6534 16.24C39.5334 16.24 38.5534 15.9867 37.7134 15.48C36.8734 14.9733 36.2201 14.2867 35.7534 13.42C35.2868 12.5533 35.0534 11.5933 35.0534 10.54C35.0534 9.44667 35.2868 8.48 35.7534 7.64C36.2334 6.78667 36.8801 6.11333 37.6934 5.62C38.5201 5.12667 39.4401 4.88 40.4534 4.88C41.3068 4.88 42.0534 5.02 42.6934 5.3C43.3468 5.58 43.9001 5.96667 44.3534 6.46C44.8068 6.95333 45.1534 7.52 45.3934 8.16C45.6334 8.78667 45.7534 9.46667 45.7534 10.2C45.7534 10.3867 45.7401 10.58 45.7134 10.78C45.7001 10.98 45.6668 11.1533 45.6134 11.3H37.2134V9.3H44.1334L42.8934 10.24C43.0134 9.62667 42.9801 9.08 42.7934 8.6C42.6201 8.12 42.3268 7.74 41.9134 7.46C41.5134 7.18 41.0268 7.04 40.4534 7.04C39.9068 7.04 39.4201 7.18 38.9934 7.46C38.5668 7.72667 38.2401 8.12667 38.0134 8.66C37.8001 9.18 37.7201 9.81333 37.7734 10.56C37.7201 11.2267 37.8068 11.82 38.0334 12.34C38.2734 12.8467 38.6201 13.24 39.0734 13.52C39.5401 13.8 40.0734 13.94 40.6734 13.94C41.2734 13.94 41.7801 13.8133 42.1934 13.56C42.6201 13.3067 42.9534 12.9667 43.1934 12.54L45.3134 13.58C45.1001 14.1 44.7668 14.56 44.3134 14.96C43.8601 15.36 43.3201 15.6733 42.6934 15.9C42.0801 16.1267 41.4001 16.24 40.6534 16.24ZM46.5642 16L50.3642 10.54L46.5442 5.12H49.6242L52.6042 9.52H51.2242L54.2042 5.12H57.2642L53.4642 10.54L57.2442 16H54.1842L51.2442 11.62H52.5842L49.6442 16H46.5642ZM0.44 44V29.1H10.34V31.5H3.16V35.32H9.94V37.72H3.16V41.6H10.34V44H0.44ZM16.2545 44.24C15.0945 44.24 14.0812 43.9667 13.2145 43.42C12.3612 42.86 11.7745 42.1067 11.4545 41.16L13.4145 40.22C13.6945 40.8333 14.0812 41.3133 14.5745 41.66C15.0812 42.0067 15.6412 42.18 16.2545 42.18C16.7345 42.18 17.1145 42.0733 17.3945 41.86C17.6745 41.6467 17.8145 41.3667 17.8145 41.02C17.8145 40.8067 17.7545 40.6333 17.6345 40.5C17.5279 40.3533 17.3745 40.2333 17.1745 40.14C16.9879 40.0333 16.7812 39.9467 16.5545 39.88L14.7745 39.38C13.8545 39.1133 13.1545 38.7067 12.6745 38.16C12.2079 37.6133 11.9745 36.9667 11.9745 36.22C11.9745 35.5533 12.1412 34.9733 12.4745 34.48C12.8212 33.9733 13.2945 33.58 13.8945 33.3C14.5079 33.02 15.2079 32.88 15.9945 32.88C17.0212 32.88 17.9279 33.1267 18.7145 33.62C19.5012 34.1133 20.0612 34.8067 20.3945 35.7L18.3945 36.64C18.2079 36.1467 17.8945 35.7533 17.4545 35.46C17.0145 35.1667 16.5212 35.02 15.9745 35.02C15.5345 35.02 15.1879 35.12 14.9345 35.32C14.6812 35.52 14.5545 35.78 14.5545 36.1C14.5545 36.3 14.6079 36.4733 14.7145 36.62C14.8212 36.7667 14.9679 36.8867 15.1545 36.98C15.3545 37.0733 15.5812 37.16 15.8345 37.24L17.5745 37.76C18.4679 38.0267 19.1545 38.4267 19.6345 38.96C20.1279 39.4933 20.3745 40.1467 20.3745 40.92C20.3745 41.5733 20.2012 42.1533 19.8545 42.66C19.5079 43.1533 19.0279 43.54 18.4145 43.82C17.8012 44.1 17.0812 44.24 16.2545 44.24ZM27.348 44.12C26.1213 44.12 25.168 43.7867 24.488 43.12C23.8213 42.44 23.488 41.4867 23.488 40.26V35.46H21.608V33.12H21.808C22.3413 33.12 22.7546 32.98 23.048 32.7C23.3413 32.42 23.488 32.0133 23.488 31.48V30.64H26.108V33.12H28.608V35.46H26.108V40.12C26.108 40.48 26.168 40.7867 26.288 41.04C26.4213 41.2933 26.6213 41.4867 26.888 41.62C27.168 41.7533 27.5213 41.82 27.948 41.82C28.0413 41.82 28.148 41.8133 28.268 41.8C28.4013 41.7867 28.528 41.7733 28.648 41.76V44C28.4613 44.0267 28.248 44.0533 28.008 44.08C27.768 44.1067 27.548 44.12 27.348 44.12ZM33.9106 44.24C33.1506 44.24 32.4906 44.1133 31.9306 43.86C31.3706 43.6067 30.9373 43.2467 30.6306 42.78C30.324 42.3 30.1706 41.7467 30.1706 41.12C30.1706 40.52 30.304 39.9867 30.5706 39.52C30.8373 39.04 31.2506 38.64 31.8106 38.32C32.3706 38 33.0773 37.7733 33.9306 37.64L37.4906 37.06V39.06L34.4306 39.58C33.9106 39.6733 33.524 39.84 33.2706 40.08C33.0173 40.32 32.8906 40.6333 32.8906 41.02C32.8906 41.3933 33.0306 41.6933 33.3106 41.92C33.604 42.1333 33.964 42.24 34.3906 42.24C34.9373 42.24 35.4173 42.1267 35.8306 41.9C36.2573 41.66 36.584 41.3333 36.8106 40.92C37.0506 40.5067 37.1706 40.0533 37.1706 39.56V36.76C37.1706 36.2933 36.984 35.9067 36.6106 35.6C36.2506 35.28 35.7706 35.12 35.1706 35.12C34.6106 35.12 34.1106 35.2733 33.6706 35.58C33.244 35.8733 32.9306 36.2667 32.7306 36.76L30.5906 35.72C30.804 35.1467 31.1373 34.6533 31.5906 34.24C32.0573 33.8133 32.604 33.48 33.2306 33.24C33.8573 33 34.5373 32.88 35.2706 32.88C36.164 32.88 36.9506 33.0467 37.6306 33.38C38.3106 33.7 38.8373 34.1533 39.2106 34.74C39.5973 35.3133 39.7906 35.9867 39.7906 36.76V44H37.3106V42.14L37.8706 42.1C37.5906 42.5667 37.2573 42.96 36.8706 43.28C36.484 43.5867 36.044 43.8267 35.5506 44C35.0573 44.16 34.5106 44.24 33.9106 44.24ZM46.9769 44.12C45.7502 44.12 44.7969 43.7867 44.1169 43.12C43.4502 42.44 43.1169 41.4867 43.1169 40.26V35.46H41.2369V33.12H41.4369C41.9702 33.12 42.3835 32.98 42.6769 32.7C42.9702 32.42 43.1169 32.0133 43.1169 31.48V30.64H45.7369V33.12H48.2369V35.46H45.7369V40.12C45.7369 40.48 45.7969 40.7867 45.9169 41.04C46.0502 41.2933 46.2502 41.4867 46.5169 41.62C46.7969 41.7533 47.1502 41.82 47.5769 41.82C47.6702 41.82 47.7769 41.8133 47.8969 41.8C48.0302 41.7867 48.1569 41.7733 48.2769 41.76V44C48.0902 44.0267 47.8769 44.0533 47.6369 44.08C47.3969 44.1067 47.1769 44.12 46.9769 44.12ZM55.3409 44.24C54.2209 44.24 53.2409 43.9867 52.4009 43.48C51.5609 42.9733 50.9076 42.2867 50.4409 41.42C49.9743 40.5533 49.7409 39.5933 49.7409 38.54C49.7409 37.4467 49.9743 36.48 50.4409 35.64C50.9209 34.7867 51.5676 34.1133 52.3809 33.62C53.2076 33.1267 54.1276 32.88 55.1409 32.88C55.9943 32.88 56.7409 33.02 57.3809 33.3C58.0343 33.58 58.5876 33.9667 59.0409 34.46C59.4943 34.9533 59.8409 35.52 60.0809 36.16C60.3209 36.7867 60.4409 37.4667 60.4409 38.2C60.4409 38.3867 60.4276 38.58 60.4009 38.78C60.3876 38.98 60.3543 39.1533 60.3009 39.3H51.9009V37.3H58.8209L57.5809 38.24C57.7009 37.6267 57.6676 37.08 57.4809 36.6C57.3076 36.12 57.0143 35.74 56.6009 35.46C56.2009 35.18 55.7143 35.04 55.1409 35.04C54.5943 35.04 54.1076 35.18 53.6809 35.46C53.2543 35.7267 52.9276 36.1267 52.7009 36.66C52.4876 37.18 52.4076 37.8133 52.4609 38.56C52.4076 39.2267 52.4943 39.82 52.7209 40.34C52.9609 40.8467 53.3076 41.24 53.7609 41.52C54.2276 41.8 54.7609 41.94 55.3609 41.94C55.9609 41.94 56.4676 41.8133 56.8809 41.56C57.3076 41.3067 57.6409 40.9667 57.8809 40.54L60.0009 41.58C59.7876 42.1 59.4543 42.56 59.0009 42.96C58.5476 43.36 58.0076 43.6733 57.3809 43.9C56.7676 44.1267 56.0876 44.24 55.3409 44.24Z"
+                          fill="#100A55"
+                        />
+                      </svg>
+                    </figure>
+                  </a>
+                </div>
+
+                <div class="p-0 v-navbar">
+                  <ul class="">
+                    <li class="v-nav-item">
+                      <a href="" class="v-nav-link v-main-text">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="v-action-container v-navbar">
+                  <a href="" class="v-action v-nav-link">Download</a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- header @::end -->
+
+          <div
+            class="v-main-hero"
+            style="background-color: rgba(247, 247, 253, 1)"
+          >
+            <!-- <div
+              class="v-content container-xl px-lg-0 position-relative"
+            >
+              <div class="row col-11 mx-auto align-items-start row-gap-5">
+                <aside class="col-lg-6 p-0 v-aside">
+                  <div
+                    class="v-hero-content d-flex flex-column row-gap-3 text-center text-lg-start mt-md-3 pt-md-5 justify-content-center col-12 col-sm-11 col-md-10 mx-auto ms-lg-0 me-lg-auto"
+                  >
+                    <h1 class="v-hero-text" style="font-size: 4rem">
+                      Urbex Estate
+                    </h1>
+                    <div class="col-lg-10">
+                      <span class="v-text" style="font-size: 1.25rem">
+                        Discover a world of convenience at your fingertips with
+                        Urbex Estate app - designed to make estate living
+                        easier, faster, safer and more enjoyable.
+                      </span>
+                    </div>
+                    
+                  </div>
+                </aside>
+                <aside class="col-lg-6 p-0 v-aside position-relative">
+                  <div class="v-aside-image-layer py-5">
+                    <figure class="v-bg-float">
+                      <img
+                        src="./assets/media/images/hero-bg.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <div class="v-aside-image-layer-inner active">
+                      <figure class="v-each-float">
+                        <img
+                          src="./assets/media/svg/float_2_business_card.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </figure>
+                      <figure
+                        class="v-hero-image mx-auto me-lg-0 ms-lg-auto"
+                      >
+                        <img
+                          src="./assets/media/images/happy-people.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div> -->
+            <div class="row col-12 m-0 align-items-stretch row-gap-3">
+              <div
+                class="v-hero-content col-lg-6 px-4 px-lg-0 col-12 pb-0 pt-5 py-md-5 mx-auto"
+              >
+                <div
+                  class="v-hero-content-inner mx-auto col-md-8 col-lg-10 col-xl-7 text-center text-lg-start d-flex flex-column row-gap-2"
+                >
+                  <h1 class="v-title" style="font-size: 4rem">
+                    <b>Urbex Estate</b>
+                  </h1>
+                  <span
+                    class="v-text d-block mt-3 mb-5 col-lg-12"
+                    style="font-size: 1.25rem; font-weight: 500;"
+                  >
+                    Discover a world of convenience at your fingertips with
+                    Urbex Estate app - designed to make estate living easier,
+                    faster, safer and more enjoyable.
+                  </span>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-center gap-4 justify-content-lg-start mt-2"
+                  >
+                    <div
+                      class="px-4"
+                      style="border-left: 3px solid rgba(224, 222, 247, 1)"
+                    >
+                      <div class="d-flex flex-column gap-1">
+                        <h1 class="v-main-text" style="font-size: 2rem; font-weight: 700;">50k</h1>
+                        <div class="">
+                          <span class="v-text" style="color: var(--subtext-clr)"
+                            >residents</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="px-4"
+                      style="border-left: 3px solid rgba(224, 222, 247, 1)"
+                    >
+                      <div class="d-flex flex-column gap-1">
+                        <h1 class="v-main-text" style="font-size: 2rem; font-weight: 700;">10k</h1>
+                        <div class="">
+                          <span class="v-text" style="color: var(--subtext-clr)"
+                            >properties</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                role="presentation"
+                class="v-aside px-0 py-lg-0 mb-5 mb-lg-0 pb-5 col-lg-6 px-4 px-lg-0 col-12 col-md-12 mx-auto"
+              >
+                <div
+                  class="v-aside-image-layer col-lg-10 py-4 py-md-5 position-relative"
+                >
+                  <div class="v-aside-image-layer-inner">
+                    <figure class="v-image">
+                      <img
+                        src="./assets/media/svgs/Property.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/hero-card.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/arrow-line.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/home-pin.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/pin-point.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/dot.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/dot-light.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/dot-light.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/dot-dark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <figure class="v-each-float">
+                      <img
+                        src="./assets/media/svgs/dot-darker.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="v-each-section py-5" id="v-guest">
+          <div class="col-xl-10 mx-auto px-2 px-lg-0">
+            <div class="">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                  <div class="v-aside-image-layer py-5">
+                    <div
+                      class="v-aside-image-layer-inner position-relative active"
+                    >
+                      <figure class="v-each-float position-absolute">
+                        <img
+                          src="./assets/media/svgs/float-1-quest.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </figure>
+                      <figure class="v-each-float position-absolute">
+                        <img
+                          src="./assets/media/svgs/float-2-quest.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </figure>
+                      <figure class="v-hero-image mx-auto">
+                        <img
+                          src="assets/media/images/guest-image.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start"
+                  >
+                    <div class="nav-container">
+                      <ul class="nav nav-tabs" id="userTypeTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="guest-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#guest-panel"
+                            type="button"
+                            role="tab"
+                            aria-controls="guest-panel"
+                            aria-selected="true"
+                          >
+                            For guests
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="resident-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#resident-panel"
+                            type="button"
+                            role="tab"
+                            aria-controls="resident-panel"
+                            aria-selected="false"
+                          >
+                            For residents
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tab-content" id="userTypeTabContent">
+                    <div
+                      class="tab-pane fade show active text-center text-lg-start"
+                      id="guest-panel"
+                      role="tabpanel"
+                      aria-labelledby="guest-tab"
+                    >
+                      <h1 class="main-heading text-center text-lg-start">
+                        We make it easy for<br />Guests and Residents.
+                      </h1>
+                      <span class="description d-block mx-auto mx-lg-0">
+                        We're committed to delivering exceptional experiences
+                        for our guests and residents, making it easy to manage
+                        estate life, connect with neighbors and enjoy your
+                        community.
+                      </span>
+                      <a
+                        href="#"
+                        class="see-more-btn text-center text-lg-start"
+                      >
+                        See more
+                        <svg
+                          class="arrow-icon"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div
+                      class="tab-pane fade text-center text-lg-start"
+                      id="resident-panel"
+                      role="tabpanel"
+                      aria-labelledby="resident-tab"
+                    >
+                      <h1 class="main-heading text-center text-lg-start">
+                        Welcome Home to<br />Your Community.
+                      </h1>
+                      <span class="description d-block mx-auto mx-lg-0">
+                        Experience the convenience of modern estate living with
+                        our comprehensive resident services, community features,
+                        and neighbor connections all in one place.
+                      </span>
+                      <a
+                        href="#"
+                        class="see-more-btn text-center text-lg-start"
+                      >
+                        See more
+                        <svg
+                          class="arrow-icon"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-each-section py-5" id="v-transform">
+          <div class="col-xl-10 mx-auto px-2 px-lg-0">
+            <div class="">
+              <div class="row align-items-center justify-content-center g-5">
+                <div class="col-lg-5">
+                  <div
+                    class="v-scrolling-container v-vertical row col-12 m-0 p-4 p-md-5 gap-3"
+                  >
+                    <div class="v-stack-col p-0 splide" id="v-left">
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <!-- each item @::start -->
+                          <div class="v-each-item splide__slide p-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <header
+                                class="d-flex align-items-center column-gap-3"
+                              >
+                                <span class="v-image">
+                                  <img
+                                    src="./assets/media/svgs/icon.svg"
+                                    alt=""
+                                    class="img-fluid"
+                                  />
+                                </span>
+                                <div class="v-right-context">
+                                  <h6 class="v-name"><b>Estate dues</b></h6>
+                                  <span class="v-subtext"
+                                    >Pay collective dues withi...</span
+                                  >
+                                </div>
+                              </header>
+                              <div class="v-card-body">
+                                <span class="v-text"> -$150.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- each item @::end -->
+                          <!-- each item @::start -->
+                          <div class="v-each-item splide__slide p-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <header
+                                class="d-flex align-items-center column-gap-3"
+                              >
+                                <span class="v-image">
+                                  <img
+                                    src="./assets/media/svgs/icon.svg"
+                                    alt=""
+                                    class="img-fluid"
+                                  />
+                                </span>
+                                <div class="v-right-context">
+                                  <h6 class="v-name"><b>Projects</b></h6>
+                                  <span class="v-subtext"
+                                    >Contribute to your estate’s cont...</span
+                                  >
+                                </div>
+                              </header>
+                              <div class="v-card-body">
+                                <span class="v-text"> -$55.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- each item @::end -->
+                          <!-- each item @::start -->
+                          <div class="v-each-item splide__slide p-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <header
+                                class="d-flex align-items-center column-gap-3"
+                              >
+                                <span class="v-image">
+                                  <img
+                                    src="./assets/media/svgs/icon.svg"
+                                    alt=""
+                                    class="img-fluid"
+                                  />
+                                </span>
+                                <div class="v-right-context">
+                                  <h6 class="v-name"><b>Top-Up</b></h6>
+                                  <span class="v-subtext">Money Transfer</span>
+                                </div>
+                              </header>
+                              <div class="v-card-body">
+                                <span class="v-text"> -$320.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- each item @::end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="d-flex flex-column row-gap-4 align-items-center align-items-lg-start col-md-7 col-lg-12 mx-auto"
+                  >
+                    <h1
+                      class="main-heading col-lg-7 text-center text-lg-start"
+                      style="font-size: 3rem; font-weight: 700"
+                    >
+                      Transforming Transactions, One Click at a Time.
+                    </h1>
+                    <div class="d-flex flex-column row-gap-3">
+                      <div class="text-center text-lg-start col-lg-9">
+                        <span class="">
+                          Our service is designed to connect the residents,
+                          offering reliable and accessible financial solutions
+                          to anytime and everytime.
+                        </span>
+                      </div>
+                      <div class="d-flex flex-column row-gap-1">
+                        <div
+                          class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="24"
+                              height="24"
+                              rx="12"
+                              fill="#F6F7F9"
+                            />
+                            <path
+                              d="M5.20697 10.4849C5.3945 10.2975 5.64881 10.1922 5.91397 10.1922C6.17914 10.1922 6.43344 10.2975 6.62097 10.4849L10.157 14.0209L17.227 6.94994C17.3198 6.85703 17.4301 6.78332 17.5514 6.73301C17.6727 6.6827 17.8028 6.65678 17.9341 6.65674C18.0655 6.65669 18.1955 6.68252 18.3169 6.73274C18.4383 6.78296 18.5486 6.8566 18.6415 6.94944C18.7344 7.04229 18.8081 7.15252 18.8584 7.27385C18.9087 7.39519 18.9346 7.52524 18.9347 7.65659C18.9347 7.78794 18.9089 7.91801 18.8587 8.03938C18.8085 8.16074 18.7348 8.27103 18.642 8.36394L10.157 16.8489L5.20697 11.8989C5.0195 11.7114 4.91418 11.4571 4.91418 11.1919C4.91418 10.9268 5.0195 10.6725 5.20697 10.4849Z"
+                              fill="#171717"
+                            />
+                          </svg>
+                          <span class="">
+                            Track transfers with real-time notifications.
+                          </span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="24"
+                              height="24"
+                              rx="12"
+                              fill="#F6F7F9"
+                            />
+                            <path
+                              d="M5.20697 10.4849C5.3945 10.2975 5.64881 10.1922 5.91397 10.1922C6.17914 10.1922 6.43344 10.2975 6.62097 10.4849L10.157 14.0209L17.227 6.94994C17.3198 6.85703 17.4301 6.78332 17.5514 6.73301C17.6727 6.6827 17.8028 6.65678 17.9341 6.65674C18.0655 6.65669 18.1955 6.68252 18.3169 6.73274C18.4383 6.78296 18.5486 6.8566 18.6415 6.94944C18.7344 7.04229 18.8081 7.15252 18.8584 7.27385C18.9087 7.39519 18.9346 7.52524 18.9347 7.65659C18.9347 7.78794 18.9089 7.91801 18.8587 8.03938C18.8085 8.16074 18.7348 8.27103 18.642 8.36394L10.157 16.8489L5.20697 11.8989C5.0195 11.7114 4.91418 11.4571 4.91418 11.1919C4.91418 10.9268 5.0195 10.6725 5.20697 10.4849Z"
+                              fill="#171717"
+                            />
+                          </svg>
+                          <span class="">
+                            Track transfers with real-time notifications.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="v-action-container mt-3">
+                      <a href="" class="v-action-link">Get Started</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-each-section pt-3 pb-5" id="v-emergencies">
+          <div class="col-xl-9 mx-auto px-2 px-lg-0">
+            <div
+              class="v-banner row col-12 m-0 row-gap-2 align-items-center mt-5"
+            >
+              <aside class="v-aside p-0 col-lg-6">
+                <div
+                  class="d-flex flex-column text-center text-lg-start col-md-8 col-lg-10 mx-auto row-gap-4 h-100 pb-2 pt-4 py-md-5"
+                >
+                  <h1 class="v-title" style="color: rgba(16, 10, 85, 1)">
+                    <b>Emergencies?</b>
+                  </h1>
+                  <div
+                    class="text-center text-lg-start text-center text-lg-start col-12 col-sm-10 col-lg-10 col-xl-6 mx-auto mx-lg-0"
+                  >
+                    <span
+                      class="v-subtext"
+                      style="color: rgba(108, 114, 127, 1)"
+                    >
+                      Conveniently report any suspicious activity within the
+                      estate and an agent would be with you asap.
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start gap-4 gap-md-5"
+                  >
+                    <div class="">
+                      <div class="">
+                        <div
+                          class="d-flex flex-column align-items-center row-gap-2"
+                        >
+                          <div class="v-icon">
+                            <svg
+                              width="65"
+                              height="64"
+                              viewBox="0 0 65 64"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="32.5"
+                                cy="32"
+                                r="31.5"
+                                stroke="#E0DEF7"
+                              />
+                              <circle cx="32.5" cy="32" r="28" fill="#E0DEF7" />
+                              <g clip-path="url(#clip0_38_2456)">
+                                <path
+                                  d="M44.1166 26.5094L35.2283 19.6024C34.4483 18.9962 33.4882 18.667 32.5 18.667C31.5117 18.667 30.5516 18.9962 29.7716 19.6024L20.8816 26.5094C20.3474 26.9245 19.9151 27.456 19.6179 28.0635C19.3207 28.671 19.1663 29.3383 19.1666 30.0145V42.0034C19.1666 42.8866 19.5178 43.7337 20.1429 44.3582C20.7681 44.9828 21.6159 45.3337 22.5 45.3337H42.5C43.384 45.3337 44.2319 44.9828 44.857 44.3582C45.4821 43.7337 45.8333 42.8866 45.8333 42.0034V30.0145C45.8333 28.6441 45.2 27.3503 44.1166 26.5094Z"
+                                  fill="white"
+                                  stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <path
+                                d="M27.5 37L37.5 27"
+                                stroke="#7065F0"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M28.3333 28.6667C28.7936 28.6667 29.1667 28.2936 29.1667 27.8333C29.1667 27.3731 28.7936 27 28.3333 27C27.8731 27 27.5 27.3731 27.5 27.8333C27.5 28.2936 27.8731 28.6667 28.3333 28.6667Z"
+                                fill="#7065F0"
+                                stroke="#7065F0"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M36.6663 36.9997C37.1266 36.9997 37.4997 36.6266 37.4997 36.1663C37.4997 35.7061 37.1266 35.333 36.6663 35.333C36.2061 35.333 35.833 35.7061 35.833 36.1663C35.833 36.6266 36.2061 36.9997 36.6663 36.9997Z"
+                                fill="#7065F0"
+                                stroke="#7065F0"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <rect
+                                x="40.5"
+                                y="40"
+                                width="24"
+                                height="24"
+                                rx="12"
+                                fill="#7065F0"
+                              />
+                              <path
+                                d="M46.1 52.7999C46.1 52.5877 46.1843 52.3842 46.3343 52.2342C46.4843 52.0842 46.6878 51.9999 46.9 51.9999H48.5C48.7121 51.9999 48.9156 52.0842 49.0657 52.2342C49.2157 52.3842 49.3 52.5877 49.3 52.7999V56.7999C49.3 57.0121 49.2157 57.2156 49.0657 57.3656C48.9156 57.5156 48.7121 57.5999 48.5 57.5999H46.9C46.6878 57.5999 46.4843 57.5156 46.3343 57.3656C46.1843 57.2156 46.1 57.0121 46.1 56.7999V52.7999ZM50.9 49.5999C50.9 49.3877 50.9843 49.1842 51.1343 49.0342C51.2843 48.8842 51.4878 48.7999 51.7 48.7999H53.3C53.5121 48.7999 53.7156 48.8842 53.8657 49.0342C54.0157 49.1842 54.1 49.3877 54.1 49.5999V56.7999C54.1 57.0121 54.0157 57.2156 53.8657 57.3656C53.7156 57.5156 53.5121 57.5999 53.3 57.5999H51.7C51.4878 57.5999 51.2843 57.5156 51.1343 57.3656C50.9843 57.2156 50.9 57.0121 50.9 56.7999V49.5999ZM55.7 47.1999C55.7 46.9877 55.7843 46.7842 55.9343 46.6342C56.0843 46.4842 56.2878 46.3999 56.5 46.3999H58.1C58.3121 46.3999 58.5156 46.4842 58.6657 46.6342C58.8157 46.7842 58.9 46.9877 58.9 47.1999V56.7999C58.9 57.0121 58.8157 57.2156 58.6657 57.3656C58.5156 57.5156 58.3121 57.5999 58.1 57.5999H56.5C56.2878 57.5999 56.0843 57.5156 55.9343 57.3656C55.7843 57.2156 55.7 57.0121 55.7 56.7999V47.1999Z"
+                                fill="white"
+                              />
+                              <defs>
+                                <clipPath id="clip0_38_2456">
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    fill="white"
+                                    transform="translate(16.5 16)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <h2 class="text-center" style="font-weight: 700">
+                            Burglary/ <br />
+                            Robbery
+                          </h2>
+                          <div class="">
+                            <span style="font-size: 0.86rem"
+                              >Security personnel....</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="">
+                        <div
+                          class="d-flex flex-column align-items-center row-gap-2"
+                        >
+                          <div class="v-icon">
+                            <svg
+                              width="65"
+                              height="64"
+                              viewBox="0 0 65 64"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="32.5"
+                                cy="32"
+                                r="31.5"
+                                stroke="#E0DEF7"
+                              />
+                              <circle cx="32.5" cy="32" r="28" fill="#E0DEF7" />
+                              <rect
+                                x="34.1499"
+                                y="25"
+                                width="2"
+                                height="10"
+                                fill="#7065F0"
+                              />
+                              <rect
+                                x="22.5"
+                                y="32"
+                                width="2"
+                                height="10"
+                                fill="#7065F0"
+                              />
+                              <rect
+                                x="39.5"
+                                y="25"
+                                width="2"
+                                height="10"
+                                fill="#7065F0"
+                              />
+                              <path
+                                d="M23.1666 26.6667C20.9533 26.6667 19.1666 28.4534 19.1666 30.6667V41.3334C19.1666 43.5467 20.9533 45.3334 23.1666 45.3334H25.1666C26.6333 45.3334 27.8333 44.1334 27.8333 42.6667V29.3334C27.8333 27.8667 26.6333 26.6667 25.1666 26.6667H23.1666ZM24.5 38.6667C24.5 39.2134 24.0466 39.6667 23.5 39.6667C22.9533 39.6667 22.5 39.2134 22.5 38.6667V33.3334C22.5 32.7867 22.9533 32.3334 23.5 32.3334C24.0466 32.3334 24.5 32.7867 24.5 33.3334V38.6667Z"
+                                fill="white"
+                              />
+                              <path
+                                d="M41.8334 18.6667H33.8334C31.62 18.6667 29.8334 20.4534 29.8334 22.6667V41.3334C29.8334 43.5467 31.62 45.3334 33.8334 45.3334H34.5C34.8734 45.3334 35.1667 45.0401 35.1667 44.6667V40.0001C35.1667 39.2667 35.7667 38.6667 36.5 38.6667H39.1667C39.9 38.6667 40.5 39.2667 40.5 40.0001V44.6667C40.5 45.0401 40.7934 45.3334 41.1667 45.3334H41.8334C44.0467 45.3334 45.8334 43.5467 45.8334 41.3334V22.6667C45.8334 20.4534 44.0467 18.6667 41.8334 18.6667ZM36.1667 33.3334C36.1667 33.8801 35.7134 34.3334 35.1667 34.3334C34.62 34.3334 34.1667 33.8801 34.1667 33.3334V26.6667C34.1667 26.1201 34.62 25.6667 35.1667 25.6667C35.7134 25.6667 36.1667 26.1201 36.1667 26.6667V33.3334ZM41.5 33.3334C41.5 33.8801 41.0467 34.3334 40.5 34.3334C39.9534 34.3334 39.5 33.8801 39.5 33.3334V26.6667C39.5 26.1201 39.9534 25.6667 40.5 25.6667C41.0467 25.6667 41.5 26.1201 41.5 26.6667V33.3334Z"
+                                fill="white"
+                              />
+                              <rect
+                                x="40.5"
+                                y="40"
+                                width="24"
+                                height="24"
+                                rx="12"
+                                fill="#7065F0"
+                              />
+                              <path
+                                d="M52.1667 57.9999C55.6645 57.9999 58.5 55.1644 58.5 51.6666C58.5 48.1688 55.6645 45.3333 52.1667 45.3333C48.6689 45.3333 45.8334 48.1688 45.8334 51.6666C45.8334 55.1644 48.6689 57.9999 52.1667 57.9999Z"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M59.1667 58.6666L57.8334 57.3333"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <h2 class="text-center" style="font-weight: 700">
+                            Suspicious <br />
+                            Activity
+                          </h2>
+                          <div class="">
+                            <span style="font-size: 0.86rem"
+                              >An agent wou...</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div
+                        class="d-flex flex-column align-items-center row-gap-2"
+                      >
+                        <div class="v-icon">
+                          <svg
+                            width="65"
+                            height="64"
+                            viewBox="0 0 65 64"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="32.5"
+                              cy="32"
+                              r="31.5"
+                              stroke="#E0DEF7"
+                            />
+                            <circle cx="32.5" cy="32" r="28" fill="#E0DEF7" />
+                            <path
+                              d="M36.5 45.3334H28.5C21.8333 45.3334 19.1666 42.6667 19.1666 36.0001V28.0001C19.1666 21.3334 21.8333 18.6667 28.5 18.6667H36.5C43.1666 18.6667 45.8333 21.3334 45.8333 28.0001V36.0001C45.8333 42.6667 43.1666 45.3334 36.5 45.3334Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M28.0625 35.1064C28.0625 36.8264 29.3825 38.213 31.0225 38.213H34.3692C35.7958 38.213 36.9558 36.9997 36.9558 35.5064C36.9558 33.8797 36.2492 33.3064 35.1958 32.933L29.8225 31.0664C28.7692 30.693 28.0625 30.1197 28.0625 28.493C28.0625 26.9997 29.2225 25.7864 30.6492 25.7864H33.9958C35.6358 25.7864 36.9558 27.173 36.9558 28.893"
+                              stroke="#7065F0"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M32.5 24V40"
+                              stroke="#7065F0"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <rect
+                              x="40.5"
+                              y="40"
+                              width="24"
+                              height="24"
+                              rx="12"
+                              fill="#7065F0"
+                            />
+                            <g clip-path="url(#clip0_38_2488)">
+                              <path
+                                d="M47.8334 52.0001L51.1667 55.3334L57.8334 48.6667"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_38_2488">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="translate(44.5 44)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <h2 class="text-center" style="font-weight: 700">
+                          Fire <br />
+                          Incident
+                        </h2>
+                        <div class="">
+                          <span style="font-size: 0.86rem"
+                            >Raising this a...</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <aside class="v-aside p-0 col-lg-6">
+                <figure class="v-image" data-aos="fade-left">
+                  <img
+                    src="./assets/media/images/house.png"
+                    alt=""
+                    class="img-fluid w-100"
+                  />
+                </figure>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-each-section pt-5" id="v-download">
+          <div class="v-main-content position-relative">
+            <div
+              class="col-10 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-column text-center flex-grow-1 row-gap-3 position-relative mb-5"
+            >
+              <h1 class="v-title" style="display: ruby; font-size: 2.5rem">
+                Download Urbex App
+              </h1>
+              <div class="col-11 col-md-8 col-xl-8 mx-auto">
+                <span class="v-subtext" style="font-size: 1.063rem">
+                  We’re dedicated to making life easier for our guests and
+                  residents, with innovative solutions that streamline estate
+                  management and enhance your lifestyle.
+                </span>
+              </div>
+              <div
+                class="mx-auto v-action-link-container mt-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <a href="#" class="v-action-link">Download App</a>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="">
+                <div
+                  class="row align-items-center justify-content-center row-gap-4"
+                >
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card"
+                      style="background-color: rgb(64, 59, 119)"
+                    >
+                      <div class="card-body d-flex gap-3">
+                        <div class="">
+                          <svg
+                            style="--size: 3.5rem"
+                            width="58"
+                            height="58"
+                            viewBox="0 0 58 58"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="28.9187"
+                              cy="28.9186"
+                              r="28.4593"
+                              fill="#100A55"
+                            />
+                            <path
+                              d="M25.3613 40.7764H32.4761C38.4052 40.7764 40.7768 38.4048 40.7768 32.4758V25.3609C40.7768 19.4319 38.4052 17.0603 32.4761 17.0603H25.3613C19.4323 17.0603 17.0607 19.4319 17.0607 25.3609V32.4758C17.0607 38.4048 19.4323 40.7764 25.3613 40.7764Z"
+                              stroke="white"
+                              stroke-width="2.66806"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M25.4797 28.9183V27.1633C25.4797 24.8984 27.0806 23.9854 29.0372 25.1119L30.555 25.9894L32.0728 26.8669C34.0294 27.9934 34.0294 29.8433 32.0728 30.9698L30.555 31.8473L29.0372 32.7248C27.0806 33.8513 25.4797 32.9264 25.4797 30.6733V28.9183Z"
+                              stroke="white"
+                              stroke-width="2.66806"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="d-flex flex-column row-gap-2">
+                          <h5 class="text-white">Code generation</h5>
+                          <div class="">
+                            <span class="text-white" style="font-size: 0.875rem"
+                              >You can conveniently generate a code for your
+                              guests which would be confirmed at the entry point
+                              into the estate.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card"
+                      style="
+                        background-color: rgba(255, 255, 255, 1);
+                        border-radius: 7.11px;
+                      "
+                    >
+                      <div class="card-body d-flex gap-3">
+                        <div class="">
+                          <svg
+                            style="--size: 3.5rem"
+                            width="58"
+                            height="58"
+                            viewBox="0 0 58 58"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="29.0718"
+                              cy="28.9186"
+                              r="28.0147"
+                              fill="white"
+                              stroke="#E0DEF7"
+                              stroke-width="0.889354"
+                            />
+                            <circle
+                              cx="29.0717"
+                              cy="28.9185"
+                              r="24.9019"
+                              fill="#E8E6F9"
+                            />
+                            <g clip-path="url(#clip0_38_2824)">
+                              <path
+                                d="M19.8489 28.9184H17.2137L29.0718 17.0603L40.9299 28.9184H38.2947"
+                                stroke="#7065F0"
+                                stroke-width="2.66806"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M19.8489 28.9185V38.1414C19.8489 38.8403 20.1265 39.5105 20.6207 40.0047C21.1149 40.4989 21.7851 40.7765 22.484 40.7765H35.6596C36.3585 40.7765 37.0287 40.4989 37.5229 40.0047C38.0171 39.5105 38.2947 38.8403 38.2947 38.1414V28.9185"
+                                stroke="#7065F0"
+                                stroke-width="2.66806"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M25.5144 30.6973L27.886 33.0689L32.6292 28.3257"
+                                stroke="#7065F0"
+                                stroke-width="2.66806"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_38_2824">
+                                <rect
+                                  width="28.4593"
+                                  height="28.4593"
+                                  fill="white"
+                                  transform="translate(14.8422 14.6887)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="d-flex flex-column row-gap-2">
+                          <h5
+                            class=""
+                            style="
+                              color: rgba(0, 9, 41, 1);
+                              border-radius: 7.11px;
+                            "
+                          >
+                            Report Emergencies
+                          </h5>
+                          <div class="">
+                            <span
+                              class=""
+                              style="
+                                font-size: 0.875rem;
+                                color: rgba(0, 9, 41, 1);
+                              "
+                              >Residents can report any suspicious activity they
+                              notice and a security personnel would be with them
+                              as soon as possible.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                    <div
+                      class="card"
+                      style="
+                        background-color: rgba(112, 101, 240, 1);
+                        border-radius: 7.11px;
+                      "
+                    >
+                      <div class="card-body d-flex gap-3">
+                        <div class="">
+                          <svg
+                            style="--size: 3.5rem"
+                            width="58"
+                            height="58"
+                            viewBox="0 0 58 58"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="29.225"
+                              cy="28.9186"
+                              r="27.57"
+                              fill="white"
+                              stroke="#E0DEF7"
+                              stroke-width="1.77871"
+                            />
+                            <path
+                              d="M39.8972 22.9893V34.8474C39.8972 38.4048 38.1185 40.7764 33.9681 40.7764H24.4817C20.3314 40.7764 18.5527 38.4048 18.5527 34.8474V22.9893C18.5527 19.4319 20.3314 17.0603 24.4817 17.0603H33.9681C38.1185 17.0603 39.8972 19.4319 39.8972 22.9893Z"
+                              stroke="#7065F0"
+                              stroke-width="2.66806"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M32.1894 20.0249V22.3965C32.1894 23.7009 33.2566 24.7681 34.561 24.7681H36.9326"
+                              stroke="#7065F0"
+                              stroke-width="2.66806"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M24.4817 30.1042H29.2249"
+                              stroke="#7065F0"
+                              stroke-width="2.66806"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M24.4817 34.8474H33.9681"
+                              stroke="#7065F0"
+                              stroke-width="2.66806"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="d-flex flex-column row-gap-2">
+                          <h5 class="text-white">Code generation</h5>
+                          <div class="">
+                            <span class="text-white" style="font-size: 0.875rem"
+                              >You can conveniently generate a code for your
+                              guests which would be confirmed at the entry point
+                              into the estate.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="">
+                <div class="d-flex justify-content-center column-gap-5">
+                  <figure class="v-image d-none d-sm-block">
+                    <img
+                      src="assets/media/images/iPhone 15 Pro Max White Titanium.png"
+                      alt=""
+                      class="img-fluid h-100 w-100"
+                    />
+                  </figure>
+                  <figure class="v-image">
+                    <img
+                      src="assets/media/images/iPhone 15 Pro Max White Titanium (2).png"
+                      alt=""
+                      class="img-fluid h-100 w-100"
+                    />
+                  </figure>
+                  <figure class="v-image d-none d-sm-block">
+                    <img
+                      src="assets/media/images/iPhone 15 Pro Max White Titanium (1).png"
+                      alt=""
+                      class="img-fluid h-100 w-100"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="v-each-section py-5" id="v-spam">
+          <div class="v-main container-fluid">
+            <div class="v-main-content position-relative">
+              <div
+                class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-column text-center flex-grow-1 row-gap-2"
+              >
+                <div class="mx-auto">
+                  <span
+                    class="v-subtext"
+                    style="
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      color: rgba(112, 101, 240, 1);
+                    "
+                  >
+                    No Spam Promise
+                  </span>
+                </div>
+
+                <h1
+                  class="v-hero-content-title"
+                  style="
+                    display: ruby;
+                    color: rgba(0, 9, 41, 1);
+                    font-weight: 700;
+                  "
+                >
+                  Are you a resident?
+                </h1>
+
+                <div class="col-11 col-md-8 col-lg-7 mx-auto">
+                  <span
+                    class="v-subtext"
+                    style="color: rgba(0, 9, 41, 1); font-weight: 500"
+                  >
+                    Discover ways to increase your estate’s security. No Spam.
+                  </span>
+                </div>
+
+                <form action="" class="mt-3">
+                  <div
+                    class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-7 mx-auto"
+                  >
+                    <div class="input-container d-flex p-3 px-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter your email address"
+                      />
+                      <button class="" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="col-11 col-md-8 col-lg-7 mx-auto">
+                  <span
+                    class="v-subtext"
+                    style="
+                      color: rgba(158, 163, 174, 1);
+                      font-size: 0.875rem;
+                      font-weight: 500;
+                    "
+                  >
+                    Join
+                    <span style="color: rgba(112, 101, 240, 1)">10,000+</span>
+                    other residents in our Urbex App.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- main @::end -->
+      <!-- footer @::start-->
+      <footer class="v-footer position-relative py-5" id="v-page-footer">
+        <div
+          class="col-xl-9 mx-auto px-3 px-lg-0 position-relative v-page-footer-inner"
+        >
+          <div class="v-main-footer">
+            <div class="row row-gap-5">
+              <div class="col-lg-3">
+                <div class="">
+                  <a href="">
+                    <figure
+                      role="img"
+                      class="v-header-logo d-flex align-items-center flex-nowrap column-gap-3"
+                    >
+                      <img
+                        src="./assets/media/logos/favicon.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <svg
+                        style="
+                          --size: 6rem;
+                          height: auto;
+                          min-width: var(--size);
+                          aspect-ratio: unset;
+                        "
+                        width="61"
+                        height="45"
+                        viewBox="0 0 61 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.18 16.24C5.03333 16.24 4.01333 16 3.12 15.52C2.24 15.04 1.54667 14.38 1.04 13.54C0.533333 12.7 0.28 11.7467 0.28 10.68V1.1H3V10.54C3 11.1533 3.13333 11.7067 3.4 12.2C3.68 12.6933 4.06 13.08 4.54 13.36C5.02 13.6267 5.56667 13.76 6.18 13.76C6.80667 13.76 7.35333 13.6267 7.82 13.36C8.3 13.08 8.67333 12.6933 8.94 12.2C9.22 11.7067 9.36 11.1533 9.36 10.54V1.1H12.08V10.68C12.08 11.7467 11.8267 12.7 11.32 13.54C10.8133 14.38 10.1133 15.04 9.22 15.52C8.34 16 7.32667 16.24 6.18 16.24ZM14.5755 16V5.12H17.0355V7.54L16.8355 7.18C17.0888 6.36667 17.4821 5.8 18.0155 5.48C18.5621 5.16 19.2155 5 19.9755 5H20.6155V7.32H19.6755C18.9288 7.32 18.3288 7.55333 17.8755 8.02C17.4221 8.47333 17.1955 9.11333 17.1955 9.94V16H14.5755ZM27.9959 16.24C27.2093 16.24 26.4826 16.0867 25.8159 15.78C25.1626 15.46 24.6426 15.0067 24.2559 14.42L24.5159 13.9V16H22.0559V0.859999H24.6759V7.28L24.2759 6.74C24.6493 6.15333 25.1559 5.7 25.7959 5.38C26.4359 5.04667 27.1759 4.88 28.0159 4.88C29.0426 4.88 29.9693 5.13333 30.7959 5.64C31.6226 6.14667 32.2759 6.82667 32.7559 7.68C33.2493 8.53333 33.4959 9.49333 33.4959 10.56C33.4959 11.6133 33.2559 12.5733 32.7759 13.44C32.2959 14.3067 31.6426 14.9933 30.8159 15.5C29.9893 15.9933 29.0493 16.24 27.9959 16.24ZM27.6959 13.84C28.2959 13.84 28.8293 13.7 29.2959 13.42C29.7626 13.14 30.1226 12.7533 30.3759 12.26C30.6426 11.7667 30.7759 11.2 30.7759 10.56C30.7759 9.92 30.6426 9.36 30.3759 8.88C30.1226 8.38667 29.7626 8 29.2959 7.72C28.8293 7.42667 28.2959 7.28 27.6959 7.28C27.1226 7.28 26.6026 7.42 26.1359 7.7C25.6826 7.98 25.3226 8.37333 25.0559 8.88C24.8026 9.37333 24.6759 9.93333 24.6759 10.56C24.6759 11.2 24.8026 11.7667 25.0559 12.26C25.3226 12.7533 25.6826 13.14 26.1359 13.42C26.6026 13.7 27.1226 13.84 27.6959 13.84ZM40.6534 16.24C39.5334 16.24 38.5534 15.9867 37.7134 15.48C36.8734 14.9733 36.2201 14.2867 35.7534 13.42C35.2868 12.5533 35.0534 11.5933 35.0534 10.54C35.0534 9.44667 35.2868 8.48 35.7534 7.64C36.2334 6.78667 36.8801 6.11333 37.6934 5.62C38.5201 5.12667 39.4401 4.88 40.4534 4.88C41.3068 4.88 42.0534 5.02 42.6934 5.3C43.3468 5.58 43.9001 5.96667 44.3534 6.46C44.8068 6.95333 45.1534 7.52 45.3934 8.16C45.6334 8.78667 45.7534 9.46667 45.7534 10.2C45.7534 10.3867 45.7401 10.58 45.7134 10.78C45.7001 10.98 45.6668 11.1533 45.6134 11.3H37.2134V9.3H44.1334L42.8934 10.24C43.0134 9.62667 42.9801 9.08 42.7934 8.6C42.6201 8.12 42.3268 7.74 41.9134 7.46C41.5134 7.18 41.0268 7.04 40.4534 7.04C39.9068 7.04 39.4201 7.18 38.9934 7.46C38.5668 7.72667 38.2401 8.12667 38.0134 8.66C37.8001 9.18 37.7201 9.81333 37.7734 10.56C37.7201 11.2267 37.8068 11.82 38.0334 12.34C38.2734 12.8467 38.6201 13.24 39.0734 13.52C39.5401 13.8 40.0734 13.94 40.6734 13.94C41.2734 13.94 41.7801 13.8133 42.1934 13.56C42.6201 13.3067 42.9534 12.9667 43.1934 12.54L45.3134 13.58C45.1001 14.1 44.7668 14.56 44.3134 14.96C43.8601 15.36 43.3201 15.6733 42.6934 15.9C42.0801 16.1267 41.4001 16.24 40.6534 16.24ZM46.5642 16L50.3642 10.54L46.5442 5.12H49.6242L52.6042 9.52H51.2242L54.2042 5.12H57.2642L53.4642 10.54L57.2442 16H54.1842L51.2442 11.62H52.5842L49.6442 16H46.5642ZM0.44 44V29.1H10.34V31.5H3.16V35.32H9.94V37.72H3.16V41.6H10.34V44H0.44ZM16.2545 44.24C15.0945 44.24 14.0812 43.9667 13.2145 43.42C12.3612 42.86 11.7745 42.1067 11.4545 41.16L13.4145 40.22C13.6945 40.8333 14.0812 41.3133 14.5745 41.66C15.0812 42.0067 15.6412 42.18 16.2545 42.18C16.7345 42.18 17.1145 42.0733 17.3945 41.86C17.6745 41.6467 17.8145 41.3667 17.8145 41.02C17.8145 40.8067 17.7545 40.6333 17.6345 40.5C17.5279 40.3533 17.3745 40.2333 17.1745 40.14C16.9879 40.0333 16.7812 39.9467 16.5545 39.88L14.7745 39.38C13.8545 39.1133 13.1545 38.7067 12.6745 38.16C12.2079 37.6133 11.9745 36.9667 11.9745 36.22C11.9745 35.5533 12.1412 34.9733 12.4745 34.48C12.8212 33.9733 13.2945 33.58 13.8945 33.3C14.5079 33.02 15.2079 32.88 15.9945 32.88C17.0212 32.88 17.9279 33.1267 18.7145 33.62C19.5012 34.1133 20.0612 34.8067 20.3945 35.7L18.3945 36.64C18.2079 36.1467 17.8945 35.7533 17.4545 35.46C17.0145 35.1667 16.5212 35.02 15.9745 35.02C15.5345 35.02 15.1879 35.12 14.9345 35.32C14.6812 35.52 14.5545 35.78 14.5545 36.1C14.5545 36.3 14.6079 36.4733 14.7145 36.62C14.8212 36.7667 14.9679 36.8867 15.1545 36.98C15.3545 37.0733 15.5812 37.16 15.8345 37.24L17.5745 37.76C18.4679 38.0267 19.1545 38.4267 19.6345 38.96C20.1279 39.4933 20.3745 40.1467 20.3745 40.92C20.3745 41.5733 20.2012 42.1533 19.8545 42.66C19.5079 43.1533 19.0279 43.54 18.4145 43.82C17.8012 44.1 17.0812 44.24 16.2545 44.24ZM27.348 44.12C26.1213 44.12 25.168 43.7867 24.488 43.12C23.8213 42.44 23.488 41.4867 23.488 40.26V35.46H21.608V33.12H21.808C22.3413 33.12 22.7546 32.98 23.048 32.7C23.3413 32.42 23.488 32.0133 23.488 31.48V30.64H26.108V33.12H28.608V35.46H26.108V40.12C26.108 40.48 26.168 40.7867 26.288 41.04C26.4213 41.2933 26.6213 41.4867 26.888 41.62C27.168 41.7533 27.5213 41.82 27.948 41.82C28.0413 41.82 28.148 41.8133 28.268 41.8C28.4013 41.7867 28.528 41.7733 28.648 41.76V44C28.4613 44.0267 28.248 44.0533 28.008 44.08C27.768 44.1067 27.548 44.12 27.348 44.12ZM33.9106 44.24C33.1506 44.24 32.4906 44.1133 31.9306 43.86C31.3706 43.6067 30.9373 43.2467 30.6306 42.78C30.324 42.3 30.1706 41.7467 30.1706 41.12C30.1706 40.52 30.304 39.9867 30.5706 39.52C30.8373 39.04 31.2506 38.64 31.8106 38.32C32.3706 38 33.0773 37.7733 33.9306 37.64L37.4906 37.06V39.06L34.4306 39.58C33.9106 39.6733 33.524 39.84 33.2706 40.08C33.0173 40.32 32.8906 40.6333 32.8906 41.02C32.8906 41.3933 33.0306 41.6933 33.3106 41.92C33.604 42.1333 33.964 42.24 34.3906 42.24C34.9373 42.24 35.4173 42.1267 35.8306 41.9C36.2573 41.66 36.584 41.3333 36.8106 40.92C37.0506 40.5067 37.1706 40.0533 37.1706 39.56V36.76C37.1706 36.2933 36.984 35.9067 36.6106 35.6C36.2506 35.28 35.7706 35.12 35.1706 35.12C34.6106 35.12 34.1106 35.2733 33.6706 35.58C33.244 35.8733 32.9306 36.2667 32.7306 36.76L30.5906 35.72C30.804 35.1467 31.1373 34.6533 31.5906 34.24C32.0573 33.8133 32.604 33.48 33.2306 33.24C33.8573 33 34.5373 32.88 35.2706 32.88C36.164 32.88 36.9506 33.0467 37.6306 33.38C38.3106 33.7 38.8373 34.1533 39.2106 34.74C39.5973 35.3133 39.7906 35.9867 39.7906 36.76V44H37.3106V42.14L37.8706 42.1C37.5906 42.5667 37.2573 42.96 36.8706 43.28C36.484 43.5867 36.044 43.8267 35.5506 44C35.0573 44.16 34.5106 44.24 33.9106 44.24ZM46.9769 44.12C45.7502 44.12 44.7969 43.7867 44.1169 43.12C43.4502 42.44 43.1169 41.4867 43.1169 40.26V35.46H41.2369V33.12H41.4369C41.9702 33.12 42.3835 32.98 42.6769 32.7C42.9702 32.42 43.1169 32.0133 43.1169 31.48V30.64H45.7369V33.12H48.2369V35.46H45.7369V40.12C45.7369 40.48 45.7969 40.7867 45.9169 41.04C46.0502 41.2933 46.2502 41.4867 46.5169 41.62C46.7969 41.7533 47.1502 41.82 47.5769 41.82C47.6702 41.82 47.7769 41.8133 47.8969 41.8C48.0302 41.7867 48.1569 41.7733 48.2769 41.76V44C48.0902 44.0267 47.8769 44.0533 47.6369 44.08C47.3969 44.1067 47.1769 44.12 46.9769 44.12ZM55.3409 44.24C54.2209 44.24 53.2409 43.9867 52.4009 43.48C51.5609 42.9733 50.9076 42.2867 50.4409 41.42C49.9743 40.5533 49.7409 39.5933 49.7409 38.54C49.7409 37.4467 49.9743 36.48 50.4409 35.64C50.9209 34.7867 51.5676 34.1133 52.3809 33.62C53.2076 33.1267 54.1276 32.88 55.1409 32.88C55.9943 32.88 56.7409 33.02 57.3809 33.3C58.0343 33.58 58.5876 33.9667 59.0409 34.46C59.4943 34.9533 59.8409 35.52 60.0809 36.16C60.3209 36.7867 60.4409 37.4667 60.4409 38.2C60.4409 38.3867 60.4276 38.58 60.4009 38.78C60.3876 38.98 60.3543 39.1533 60.3009 39.3H51.9009V37.3H58.8209L57.5809 38.24C57.7009 37.6267 57.6676 37.08 57.4809 36.6C57.3076 36.12 57.0143 35.74 56.6009 35.46C56.2009 35.18 55.7143 35.04 55.1409 35.04C54.5943 35.04 54.1076 35.18 53.6809 35.46C53.2543 35.7267 52.9276 36.1267 52.7009 36.66C52.4876 37.18 52.4076 37.8133 52.4609 38.56C52.4076 39.2267 52.4943 39.82 52.7209 40.34C52.9609 40.8467 53.3076 41.24 53.7609 41.52C54.2276 41.8 54.7609 41.94 55.3609 41.94C55.9609 41.94 56.4676 41.8133 56.8809 41.56C57.3076 41.3067 57.6409 40.9667 57.8809 40.54L60.0009 41.58C59.7876 42.1 59.4543 42.56 59.0009 42.96C58.5476 43.36 58.0076 43.6733 57.3809 43.9C56.7676 44.1267 56.0876 44.24 55.3409 44.24Z"
+                          fill="#100A55"
+                        />
+                      </svg>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-9">
+                <div class="row row-gap-3">
+                  <div class="col-sm-4">
+                    <div class="d-flex flex-column row-gap-5">
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">Guests</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Active Invites
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                            >
+                              New Invites
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >History</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">Elections</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Coming soon...
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="d-flex flex-column row-gap-5">
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">Emergency</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Suspicious Activity</a
+                            >
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Kidnap</a
+                            >
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Robbery/ Burglary</a
+                            >
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Fire Incident</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">TERMS & PRIVACY</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Trust & Safety
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Terms of Service
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Privacy Policy
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="d-flex flex-column row-gap-5">
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">Projects</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Contributions</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-5 fw-bold mb-4">RESOURCES</h3>
+                        <ul class="list-unstyled">
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Blog
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Guides
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >FAQ
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a
+                              href="#"
+                              class="text-decoration-none fw-medium"
+                              style="color: rgba(0, 9, 41, 1)"
+                              >Help Center</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div style="border-top: 1.5px solid rgba(232, 230, 249, 1)">
+        <div class="col-xl-9 mx-auto px-3 px-lg-0 py-3">
+          <div
+            class="v-post-footer d-flex flex-column flex-sm-row align-items-center justify-content-between row-gap-3 py-3"
+          >
+            <span class="v-text fw-medium" style="color: rgba(0, 9, 41, 1)"
+              >©2025 Urbex Estate. All rights reserved</span
+            >
+            <div class="social-icon d-flex gap-4">
+              <a href="#" class="">
+                <svg
+                  style="--size: 1.55rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none" stroke="rgba(0, 9, 41, 1)" stroke-width="1.5">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"
+                    />
+                    <path
+                      d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m17.5 6.51l.01-.011"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="">
+                <svg
+                  style="--size: 1.55rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none" stroke="#000" stroke-width="1.5">
+                    <path
+                      fill="#000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m14 12l-3.5 2v-4z"
+                    />
+                    <path
+                      d="M2 12.708v-1.416c0-2.895 0-4.343.905-5.274c.906-.932 2.332-.972 5.183-1.053C9.438 4.927 10.818 4.9 12 4.9s2.561.027 3.912.065c2.851.081 4.277.121 5.182 1.053S22 8.398 22 11.292v1.415c0 2.896 0 4.343-.905 5.275c-.906.931-2.331.972-5.183 1.052c-1.35.039-2.73.066-3.912.066s-2.561-.027-3.912-.066c-2.851-.08-4.277-.12-5.183-1.052S2 15.602 2 12.708Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="text-dark">
+                <svg
+                  style="--size: 1.55rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="rgba(0, 9, 41, 1)"
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="">
+                <svg
+                  style="--size: 1.55rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000"
+                    fill-rule="evenodd"
+                    d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer @::end -->
+
+      <!-- offcanvas @::start -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="sideBar"
+        aria-labelledby="sideBarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sideBarLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body"></div>
+      </div>
+      <!-- offcanvas @::end -->
+    </div>
+
+    <script
+      type="text/javascript"
+      src="./assets/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/index.custom.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script>
+      const allScrollers = document.querySelectorAll(
+        ".v-scrolling-container .v-stack-col"
+      );
+
+      allScrollers.forEach((scroller) => {
+        const id = scroller.id;
+        let speedDirection;
+        switch (id) {
+          case "v-right":
+            speedDirection = 0.3;
+            break;
+          case "v-left":
+            speedDirection = -1 + 0.7;
+            break;
+          default:
+            speedDirection = 0.3;
+            break;
+        }
+        new Splide(scroller, {
+          type: "loop",
+          drag: "free",
+          direction: "ttb",
+          gap: "0.75rem",
+          pagination: false,
+          arrows: false,
+          height: "250px",
+          easing: "ease-in-out",
+          fixedHeight: "max-content",
+          focus: "center",
+          autoScroll: {
+            speed: speedDirection,
+          },
+        }).mount(window.splide.Extensions);
+      });
+    </script>
+  </body>
+</html>

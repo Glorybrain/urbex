@@ -1,0 +1,84 @@
+/* min widths */
+@media all and (min-width: 400px) {
+}
+
+@media all and (min-width: 420px) {
+}
+
+@media all and (min-width: 464px) {
+}
+
+@media all and (min-width: 476px) {
+}
+
+@media all and (min-width: 500px) {
+}
+
+@media all and (min-width: 600px) {
+}
+
+@media (min-width: 640px) {
+  #v-guest .v-aside-image-layer .v-each-float:nth-of-type(1) {
+    transform: translate(-5%, -50%) !important;
+  }
+  #v-guest .v-aside-image-layer .v-each-float:nth-of-type(2) {
+    transform: translate(-3%, 5%) !important;
+  }
+  
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 800px) {
+}
+
+@media all and (min-width: 991px) {
+}
+
+@media all and (min-width: 1024px) {
+}
+
+@media all and (min-width: 1200px) {
+}
+
+/* max widths */
+@media all and (max-width: 1200px) {
+}
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 991px) {
+  #v-emergencies .v-banner .v-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 650px) {
+}
+
+@media all and (max-width: 500px) {
+  .v-header {
+    padding: 1rem .25rem 1rem;
+  }
+}
+
+@media all and (max-width: 475px) {
+}
+
+@media all and (max-width: 400px) {
+}
+
+@media all and (max-width: 375px) {
+}
+
+@media all and (max-width: 350px) {
+}
+
+@media all and (min-width: 768px) and (orientation: landscape) {
+}
