@@ -92,61 +92,11 @@
             class="v-main-hero"
             style="background-color: rgba(247, 247, 253, 1)"
           >
-            <!-- <div
-              class="v-content container-xl px-lg-0 position-relative"
+            <div
+              class="row col-12 m-0 align-items-stretch flex-wrap flex-lg-nowrap row-gap-3"
             >
-              <div class="row col-11 mx-auto align-items-start row-gap-5">
-                <aside class="col-lg-6 p-0 v-aside">
-                  <div
-                    class="v-hero-content d-flex flex-column row-gap-3 text-center text-lg-start mt-md-3 pt-md-5 justify-content-center col-12 col-sm-11 col-md-10 mx-auto ms-lg-0 me-lg-auto"
-                  >
-                    <h1 class="v-hero-text" style="font-size: 4rem">
-                      Urbex Estate
-                    </h1>
-                    <div class="col-lg-10">
-                      <span class="v-text" style="font-size: 1.25rem">
-                        Discover a world of convenience at your fingertips with
-                        Urbex Estate app - designed to make estate living
-                        easier, faster, safer and more enjoyable.
-                      </span>
-                    </div>
-                    
-                  </div>
-                </aside>
-                <aside class="col-lg-6 p-0 v-aside position-relative">
-                  <div class="v-aside-image-layer py-5">
-                    <figure class="v-bg-float">
-                      <img
-                        src="./assets/media/images/hero-bg.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <div class="v-aside-image-layer-inner active">
-                      <figure class="v-each-float">
-                        <img
-                          src="./assets/media/svg/float_2_business_card.svg"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </figure>
-                      <figure
-                        class="v-hero-image mx-auto me-lg-0 ms-lg-auto"
-                      >
-                        <img
-                          src="./assets/media/images/happy-people.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                </aside>
-              </div>
-            </div> -->
-            <div class="row col-12 m-0 align-items-stretch row-gap-3">
-              <div
-                class="v-hero-content col-lg-6 px-4 px-lg-0 col-12 pb-0 pt-5 py-md-5 mx-auto"
+              <aside
+                class="v-hero-content col-lg-6 px-4 px-lg-0 col-12 pb-2 pt-5 py-md-5"
               >
                 <div
                   class="v-hero-content-inner mx-auto col-md-8 col-lg-10 col-xl-7 text-center text-lg-start d-flex flex-column row-gap-2"
@@ -156,21 +106,26 @@
                   </h1>
                   <span
                     class="v-text d-block mt-3 mb-5 col-lg-12"
-                    style="font-size: 1.25rem; font-weight: 500;"
+                    style="font-size: 1.25rem; font-weight: 500"
                   >
                     Discover a world of convenience at your fingertips with
                     Urbex Estate app - designed to make estate living easier,
                     faster, safer and more enjoyable.
                   </span>
                   <div
-                    class="d-flex flex-wrap align-items-center justify-content-center gap-4 justify-content-lg-start mt-2"
+                    class="d-flex flex-wrap align-items-center justify-content-center column-gap-4 justify-content-lg-start mt-4"
                   >
                     <div
                       class="px-4"
                       style="border-left: 3px solid rgba(224, 222, 247, 1)"
                     >
                       <div class="d-flex flex-column gap-1">
-                        <h1 class="v-main-text" style="font-size: 2rem; font-weight: 700;">50k</h1>
+                        <h1
+                          class="v-main-text"
+                          style="font-size: 2rem; font-weight: 700"
+                        >
+                          50k
+                        </h1>
                         <div class="">
                           <span class="v-text" style="color: var(--subtext-clr)"
                             >residents</span
@@ -183,7 +138,12 @@
                       style="border-left: 3px solid rgba(224, 222, 247, 1)"
                     >
                       <div class="d-flex flex-column gap-1">
-                        <h1 class="v-main-text" style="font-size: 2rem; font-weight: 700;">10k</h1>
+                        <h1
+                          class="v-main-text"
+                          style="font-size: 2rem; font-weight: 700"
+                        >
+                          10k
+                        </h1>
                         <div class="">
                           <span class="v-text" style="color: var(--subtext-clr)"
                             >properties</span
@@ -193,101 +153,753 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                role="presentation"
-                class="v-aside px-0 py-lg-0 mb-5 mb-lg-0 pb-5 col-lg-6 px-4 px-lg-0 col-12 col-md-12 mx-auto"
+                <div class="tab-container mx-auto">
+                  <div class="">
+                    <div class="custom-nav">
+                      <ul
+                        class="nav nav-tabs flex-nowrap"
+                        id="myTab"
+                        role="tablist"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="guests-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#guests"
+                            type="button"
+                            role="tab"
+                            aria-controls="guests"
+                            aria-selected="true"
+                          >
+                            Guests
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="projects-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#projects"
+                            type="button"
+                            role="tab"
+                            aria-controls="projects"
+                            aria-selected="false"
+                            tabindex="-1"
+                          >
+                            Projects
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="emergency-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#emergency"
+                            type="button"
+                            role="tab"
+                            aria-controls="emergency"
+                            aria-selected="false"
+                            tabindex="-1"
+                          >
+                            Emergency
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tab-content mt-0 pt-0" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active mt-0"
+                        id="guests"
+                        role="tabpanel"
+                        aria-labelledby="guests-tab"
+                      >
+                        <div class="card p-4">
+                          <div
+                            class="d-flex flex-column flex-md-row align-items-start align-items-lg-center justify-content-between row-gap-4"
+                          >
+                            <div class="">
+                              <div class="tab-card pe-5">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Active Invite</span
+                                  >
+                                  <span
+                                    class="mb-0"
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-size: 1.125rem;
+                                      font-weight: 700;
+                                    "
+                                    >Adebayo Yinka</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="tab-card pe-5">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Date</span
+                                  >
+                                  <div class="d-flex align-items-center gap-3">
+                                    <span
+                                      class="mb-0"
+                                      style="
+                                        color: rgba(0, 9, 41, 1);
+                                        font-size: 1.125rem;
+                                        font-weight: 700;
+                                      "
+                                      >Select Move-in Date</span
+                                    >
+                                    <svg
+                                      style="--size: 1.25rem"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <g fill="none">
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-width="1.5"
+                                          d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"
+                                        />
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-linecap="round"
+                                          stroke-width="1.5"
+                                          d="M7 4V2.5M17 4V2.5M2.5 9h19"
+                                        />
+                                        <path
+                                          fill="rgba(0, 9, 41, 1)"
+                                          d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+                                        />
+                                      </g>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="v-action-container">
+                                <a href="#" class="v-action-link">
+                                  Browse Invites
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="tab-pane fade mt-0"
+                        id="projects"
+                        role="tabpanel"
+                        aria-labelledby="projects-tab"
+                      >
+                        <div class="card p-4">
+                          <div
+                            class="d-flex flex-column flex-md-row align-items-start align-items-lg-center justify-content-between row-gap-4"
+                          >
+                            <div class="">
+                              <div class="tab-card">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Active Invite</span
+                                  >
+                                  <span
+                                    class="mb-0"
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-size: 1.125rem;
+                                      font-weight: 700;
+                                    "
+                                    >Adebayo Yinka</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="tab-card">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Date</span
+                                  >
+                                  <div class="d-flex align-items-center gap-3">
+                                    <span
+                                      class="mb-0"
+                                      style="
+                                        color: rgba(0, 9, 41, 1);
+                                        font-size: 1.125rem;
+                                        font-weight: 700;
+                                      "
+                                      >Select Move-in Date</span
+                                    >
+                                    <svg
+                                      style="--size: 1.25rem"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <g fill="none">
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-width="1.5"
+                                          d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"
+                                        />
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-linecap="round"
+                                          stroke-width="1.5"
+                                          d="M7 4V2.5M17 4V2.5M2.5 9h19"
+                                        />
+                                        <path
+                                          fill="rgba(0, 9, 41, 1)"
+                                          d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+                                        />
+                                      </g>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="v-action-container">
+                                <a href="#" class="v-action-link">
+                                  Browse Invites
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="tab-pane fade mt-0"
+                        id="emergency"
+                        role="tabpanel"
+                        aria-labelledby="emergency-tab"
+                      >
+                        <div class="card p-4">
+                          <div
+                            class="d-flex flex-column flex-md-row align-items-start align-items-lg-center justify-content-between row-gap-4"
+                          >
+                            <div class="">
+                              <div class="tab-card">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Active Invite</span
+                                  >
+                                  <span
+                                    class="mb-0"
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-size: 1.125rem;
+                                      font-weight: 700;
+                                    "
+                                    >Adebayo Yinka</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="tab-card">
+                                <div class="d-flex flex-column row-gap-1">
+                                  <span
+                                    class=""
+                                    style="
+                                      color: rgba(0, 9, 41, 1);
+                                      font-weight: 500;
+                                    "
+                                    >Date</span
+                                  >
+                                  <div class="d-flex align-items-center gap-3">
+                                    <span
+                                      class="mb-0"
+                                      style="
+                                        color: rgba(0, 9, 41, 1);
+                                        font-size: 1.125rem;
+                                        font-weight: 700;
+                                      "
+                                      >Select Move-in Date</span
+                                    >
+                                    <svg
+                                      style="--size: 1.25rem"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <g fill="none">
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-width="1.5"
+                                          d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"
+                                        />
+                                        <path
+                                          stroke="rgba(0, 9, 41, 1)"
+                                          stroke-linecap="round"
+                                          stroke-width="1.5"
+                                          d="M7 4V2.5M17 4V2.5M2.5 9h19"
+                                        />
+                                        <path
+                                          fill="rgba(0, 9, 41, 1)"
+                                          d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+                                        />
+                                      </g>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <div class="v-action-container">
+                                <a href="#" class="v-action-link">
+                                  Browse Invites
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <aside
+                class="v-aside-image px-0 py-lg-4 py-xl-5 mb-lg-0 pb-5 col-12 col-md-12 col-lg-6 px-4 px-lg-0 mx-auto position-relative"
               >
                 <div
-                  class="v-aside-image-layer col-lg-10 py-4 py-md-5 position-relative"
+                  class="v-aside-layer col-lg-10 py-4 py-md-5 py-lg-4 py-xl-3 position-relative h-100"
                 >
-                  <div class="v-aside-image-layer-inner">
-                    <figure class="v-image">
+                  <div class="v-aside-card">
+                    <div class="card" style="border-radius: 8px">
                       <img
-                        src="./assets/media/svgs/Property.svg"
+                        style="border-radius: 8px 8px 0 0"
+                        src="assets/media/images/house-img.png"
+                        class="card-img-top"
+                        alt=""
+                      />
+                      <div class="card-body">
+                        <div class="d-flex flex-column row-gap-2">
+                          <div
+                            class="d-flex flex-column row-gap-2 pb-3"
+                            style="
+                              border-bottom: 1px solid rgba(240, 239, 251, 1);
+                            "
+                          >
+                            <h4
+                              style="
+                                color: rgba(112, 101, 240, 1);
+                                font-weight: 800;
+                              "
+                            >
+                              The Bankoles
+                            </h4>
+                            <h4
+                              style="color: rgba(0, 9, 41, 1); font-weight: 700"
+                            >
+                              Diamond Garden Estate
+                            </h4>
+                            <div class="">
+                              <span style="color: rgba(0, 9, 41, 1)"
+                                >2821 Lake Sevilla, Palm Harbor, TX</span
+                              >
+                            </div>
+                          </div>
+                          <div class="d-flex gap-3 mt-1">
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15 9.375H3.75V5.3125C3.75124 4.89848 3.91625 4.50177 4.20901 4.20901C4.50177 3.91625 4.89848 3.75124 5.3125 3.75H14.6875C15.1015 3.75124 15.4982 3.91625 15.791 4.20901C16.0837 4.50177 16.2488 4.89848 16.25 5.3125V9.375H15Z"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M1.875 16.25V11.875C1.87696 11.2126 2.14098 10.5778 2.6094 10.1094C3.07781 9.64098 3.71256 9.37696 4.375 9.375H15.625C16.2874 9.37696 16.9222 9.64098 17.3906 10.1094C17.859 10.5778 18.123 11.2126 18.125 11.875V16.25"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M1.875 16.25V15.9375C1.87572 15.6891 1.97473 15.451 2.15038 15.2754C2.32604 15.0997 2.56408 15.0007 2.8125 15H17.1875C17.4359 15.0007 17.674 15.0997 17.8496 15.2754C18.0253 15.451 18.1243 15.6891 18.125 15.9375V16.25"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >4</span
+                              >
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_38_2627)">
+                                  <path
+                                    d="M3.33333 10H16.6667C16.8877 10 17.0996 10.0878 17.2559 10.2441C17.4122 10.4004 17.5 10.6123 17.5 10.8333V13.3333C17.5 14.2174 17.1488 15.0652 16.5237 15.6904C15.8986 16.3155 15.0507 16.6667 14.1667 16.6667H5.83333C4.94928 16.6667 4.10143 16.3155 3.47631 15.6904C2.85119 15.0652 2.5 14.2174 2.5 13.3333V10.8333C2.5 10.6123 2.5878 10.4004 2.74408 10.2441C2.90036 10.0878 3.11232 10 3.33333 10V10Z"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M5 10V4.16667C5 3.72464 5.17559 3.30072 5.48816 2.98816C5.80072 2.67559 6.22464 2.5 6.66667 2.5H9.16667V4.375"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M3.33331 17.5L4.16665 16.25"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M16.6666 17.5L15.8333 16.25"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_38_2627">
+                                    <rect width="20" height="20" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >2</span
+                              >
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_38_2630)">
+                                  <path
+                                    d="M8.83155 15.5436L3.45637 10.1685C2.84796 9.56007 2.84796 8.43985 3.45637 7.83144L8.83155 2.45626C9.43995 1.84786 10.5602 1.84786 11.1686 2.45626L16.5438 7.83144C17.1522 8.43985 17.1522 9.56007 16.5438 10.1685L11.1686 15.5436C10.5602 16.1521 9.43995 16.1521 8.83155 15.5436V15.5436Z"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M1.99994 13.1716L6.36365 17.5353"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M13.6362 17.5353L17.9999 13.1716"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_38_2630">
+                                    <rect width="20" height="20" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >6x7.5 m²</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-aside-card">
+                    <div class="card" style="border-radius: 8px">
+                      <img
+                        style="border-radius: 8px 8px 0 0; object-fit: cover"
+                        src="assets/media/images/house-img2.png"
+                        class="card-img-top"
+                        alt=""
+                      />
+                      <div class="card-body">
+                        <div class="d-flex flex-column row-gap-2">
+                          <div
+                            class="d-flex flex-column row-gap-2 pb-3"
+                            style="
+                              border-bottom: 1px solid rgba(240, 239, 251, 1);
+                            "
+                          >
+                            <h5
+                              style="
+                                color: rgba(112, 101, 240, 1);
+                                font-weight: 800;
+                              "
+                            >
+                              The Quadris
+                            </h5>
+                            <h5
+                              style="color: rgba(0, 9, 41, 1); font-weight: 700"
+                            >
+                              Diamond Garden Estate
+                            </h5>
+                            <div class="">
+                              <span
+                                style="
+                                  color: rgba(0, 9, 41, 1);
+                                  font-size: 0.75rem;
+                                "
+                                >Palm Harbor, TX</span
+                              >
+                            </div>
+                          </div>
+                          <div class="d-flex gap-3 mt-1">
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15 9.375H3.75V5.3125C3.75124 4.89848 3.91625 4.50177 4.20901 4.20901C4.50177 3.91625 4.89848 3.75124 5.3125 3.75H14.6875C15.1015 3.75124 15.4982 3.91625 15.791 4.20901C16.0837 4.50177 16.2488 4.89848 16.25 5.3125V9.375H15Z"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M1.875 16.25V11.875C1.87696 11.2126 2.14098 10.5778 2.6094 10.1094C3.07781 9.64098 3.71256 9.37696 4.375 9.375H15.625C16.2874 9.37696 16.9222 9.64098 17.3906 10.1094C17.859 10.5778 18.123 11.2126 18.125 11.875V16.25"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M1.875 16.25V15.9375C1.87572 15.6891 1.97473 15.451 2.15038 15.2754C2.32604 15.0997 2.56408 15.0007 2.8125 15H17.1875C17.4359 15.0007 17.674 15.0997 17.8496 15.2754C18.0253 15.451 18.1243 15.6891 18.125 15.9375V16.25"
+                                  stroke="#7065F0"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >4</span
+                              >
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_38_2627)">
+                                  <path
+                                    d="M3.33333 10H16.6667C16.8877 10 17.0996 10.0878 17.2559 10.2441C17.4122 10.4004 17.5 10.6123 17.5 10.8333V13.3333C17.5 14.2174 17.1488 15.0652 16.5237 15.6904C15.8986 16.3155 15.0507 16.6667 14.1667 16.6667H5.83333C4.94928 16.6667 4.10143 16.3155 3.47631 15.6904C2.85119 15.0652 2.5 14.2174 2.5 13.3333V10.8333C2.5 10.6123 2.5878 10.4004 2.74408 10.2441C2.90036 10.0878 3.11232 10 3.33333 10V10Z"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M5 10V4.16667C5 3.72464 5.17559 3.30072 5.48816 2.98816C5.80072 2.67559 6.22464 2.5 6.66667 2.5H9.16667V4.375"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M3.33331 17.5L4.16665 16.25"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M16.6666 17.5L15.8333 16.25"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_38_2627">
+                                    <rect width="20" height="20" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >2</span
+                              >
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_38_2630)">
+                                  <path
+                                    d="M8.83155 15.5436L3.45637 10.1685C2.84796 9.56007 2.84796 8.43985 3.45637 7.83144L8.83155 2.45626C9.43995 1.84786 10.5602 1.84786 11.1686 2.45626L16.5438 7.83144C17.1522 8.43985 17.1522 9.56007 16.5438 10.1685L11.1686 15.5436C10.5602 16.1521 9.43995 16.1521 8.83155 15.5436V15.5436Z"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M1.99994 13.1716L6.36365 17.5353"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M13.6362 17.5353L17.9999 13.1716"
+                                    stroke="#7065F0"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_38_2630">
+                                    <rect width="20" height="20" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+
+                              <span
+                                style="
+                                  font-size: 0.875rem;
+                                  color: rgba(108, 114, 127, 1);
+                                "
+                                >6x8 m²</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-each-float">
+                    <figure class="">
+                      <img
+                        src="./assets/media/svgs/arrow-tag.svg"
                         alt=""
                         class="img-fluid"
                       />
                     </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/hero-card.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/arrow-line.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
+                  </div>
+                  <!-- <div class="v-each-float">
+                    <figure class="">
                       <img
                         src="./assets/media/svgs/home-pin.svg"
                         alt=""
                         class="img-fluid"
                       />
                     </figure>
-                    <figure class="v-each-float">
+                  </div>
+                  <div class="v-each-float">
+                    <figure class="">
                       <img
                         src="./assets/media/svgs/pin-point.svg"
                         alt=""
                         class="img-fluid"
                       />
                     </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/dot.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/dot-light.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/dot-light.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/dot-dark.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <figure class="v-each-float">
-                      <img
-                        src="./assets/media/svgs/dot-darker.svg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </figure>
-                  </div>
+                  </div> -->
                 </div>
-              </div>
+              </aside>
             </div>
           </div>
         </section>
-        
+
         <section class="v-each-section py-5" id="v-guest">
           <div class="col-xl-10 mx-auto px-2 px-lg-0">
             <div class="">
               <div class="row align-items-center g-5">
                 <div class="col-lg-7">
                   <div class="v-aside-image-layer py-5">
-                    <div
-                      class="v-aside-image-layer-inner position-relative active"
-                    >
+                    <div class="v-aside-image-layer-inner position-relative">
                       <figure class="v-each-float position-absolute">
                         <img
                           src="./assets/media/svgs/float-1-quest.svg"
@@ -1182,7 +1794,7 @@
           </div>
         </section>
 
-        <section class="v-each-section py-5" id="v-spam">
+        <section class="v-each-section" id="v-spam">
           <div class="v-main container-fluid">
             <div class="v-main-content position-relative">
               <div
@@ -1299,9 +1911,9 @@
               </div>
 
               <div class="col-lg-9">
-                <div class="row row-gap-3">
+                <div class="row row-gap-4">
                   <div class="col-sm-4">
-                    <div class="d-flex flex-column row-gap-5">
+                    <div class="d-flex flex-column row-gap-4">
                       <div class="">
                         <h3 class="fs-5 fw-bold mb-4">Guests</h3>
                         <ul class="list-unstyled">
@@ -1349,7 +1961,7 @@
                   </div>
 
                   <div class="col-sm-4">
-                    <div class="d-flex flex-column row-gap-5">
+                    <div class="d-flex flex-column row-gap-4">
                       <div class="">
                         <h3 class="fs-5 fw-bold mb-4">Emergency</h3>
                         <ul class="list-unstyled">
@@ -1420,7 +2032,7 @@
                   </div>
 
                   <div class="col-sm-4">
-                    <div class="d-flex flex-column row-gap-5">
+                    <div class="d-flex flex-column row-gap-4">
                       <div class="">
                         <h3 class="fs-5 fw-bold mb-4">Projects</h3>
                         <ul class="list-unstyled">
@@ -1490,7 +2102,21 @@
             <div class="social-icon d-flex gap-4">
               <a href="#" class="">
                 <svg
-                  style="--size: 1.55rem"
+                  style="--size: 1.75rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="rgba(0, 9, 41, 1)"
+                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="">
+                <svg
+                  style="--size: 1.75rem"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -1513,30 +2139,9 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="">
-                <svg
-                  style="--size: 1.55rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <g fill="none" stroke="#000" stroke-width="1.5">
-                    <path
-                      fill="#000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m14 12l-3.5 2v-4z"
-                    />
-                    <path
-                      d="M2 12.708v-1.416c0-2.895 0-4.343.905-5.274c.906-.932 2.332-.972 5.183-1.053C9.438 4.927 10.818 4.9 12 4.9s2.561.027 3.912.065c2.851.081 4.277.121 5.182 1.053S22 8.398 22 11.292v1.415c0 2.896 0 4.343-.905 5.275c-.906.931-2.331.972-5.183 1.052c-1.35.039-2.73.066-3.912.066s-2.561-.027-3.912-.066c-2.851-.08-4.277-.12-5.183-1.052S2 15.602 2 12.708Z"
-                    />
-                  </g>
-                </svg>
-              </a>
               <a href="#" class="text-dark">
                 <svg
-                  style="--size: 1.55rem"
+                  style="--size: 1.75rem"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -1550,17 +2155,15 @@
               </a>
               <a href="#" class="">
                 <svg
-                  style="--size: 1.55rem"
+                  style="--size: 1.75rem"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    fill="#000"
-                    fill-rule="evenodd"
-                    d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803"
-                    clip-rule="evenodd"
+                    fill="rgba(0, 9, 41, 1)"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
                   />
                 </svg>
               </a>
@@ -1614,9 +2217,6 @@
         switch (id) {
           case "v-right":
             speedDirection = 0.3;
-            break;
-          case "v-left":
-            speedDirection = -1 + 0.7;
             break;
           default:
             speedDirection = 0.3;
