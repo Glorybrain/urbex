@@ -99,7 +99,7 @@
 }
 .v-main-hero .v-aside-image {
   background-image: url(../media/images/hero-bg.png);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

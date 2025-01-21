@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@font-face {
+	font-family: PlusJakartaSans;
+	src: url("../font/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+}
 
 :root {
+	--font-family: PlusJakartaSans, system-ui, Helvetica, Arial;
 	--font-family: "Plus Jakarta Sans", serif;
 	--main-bg-clr: #f7f9fa;
 	--border-line-clr: #f2f3f5;
@@ -87,6 +92,7 @@ button {
 	margin: 0;
 }
 *:not(h1, h2, h3, h4, h5, h6) {
+	/* font-family: var(--font-family-regular); */
 	font-weight: 400;
 }
 *:not(*:not(h1, h2, h3, h4, h5, h6, b, strong)) {
